@@ -6,23 +6,35 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Layout from "./components/shared/Layout";
+import Home from "./components/pages/Home";
+import Cart from "./components/pages/Cart";
 
 const router = createBrowserRouter([
+
   {
     path: "/",
     element: (
       <Layout>
-        <h1>Hello World</h1>
+        <Home />
         <Link to="about">About Us</Link>
       </Layout>
-    ),
+    )
   },
+
   {
-    path: "about",
-    element: <div>About</div>,
+    path: "/about",
+    element: (<Cart />),
   },
+  
+  { 
+    path: "*",
+    element: (<div>Not Found</div>), 
+  },
+    
 ]);
 
 createRoot(document.getElementById("root")!).render(
-  <RouterProvider router={router} />
+  <>
+    <RouterProvider router={router} />
+  </>
 );
