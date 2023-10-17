@@ -1,6 +1,4 @@
-import React from 'react'
 
-interface Props {}
 
 const Home = () => {
   return <div>Home</div>
