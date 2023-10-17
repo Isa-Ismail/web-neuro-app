@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import Home from './components/pages/Home'
-import Login from './components/pages/Login'
+import Cart from './components/pages/Cart'
 
 function App() {
 
@@ -8,7 +8,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/cart" element={<Cart />} />
         {/*<Route path="/signup" element={<Signup />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="/resetpassword" element={<ResetPassword />} />
