@@ -1,7 +1,10 @@
+import Layout from "../shared/Layout"
 
 
 const Home = () => {
-    return <div>hello</div>
+    return (
+        <Layout>hello</Layout>
+    )
 }
 
 export default Home
